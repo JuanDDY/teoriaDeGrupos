@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teoria de grupos</title>
+  <link rel="stylesheet" href="lib/style.css" />
+  <script src="lib/script.js"></script>
   <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,7 +15,7 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header class="main-header__title">
       <h1>TEORIA DE GRUPOS</h1>
     </header>
     <hr size="2px" color="black" />
@@ -35,25 +37,25 @@
         llamar G que necesita una operacion binaria * con las siguientes
         propiedades:
       </p>
-      <ol>
-        <li>
+      <ol id="definicionn">
+        <li class="definicion1">
           <p class="negrilla">Asociatividad:</p>
           Para todo a, b, c en G, (a * b) * c = a * (b * c).
         </li>
         <br />
-        <li>
+        <li class="definicion2">
           <p class="negrilla">Elemento neutro:</p>
           Existe un elemento e unico en G tal que, para todo a en G, a * e = e
           * a = a.
         </li>
         <br />
-        <li>
+        <li class="definicion1">
           <p class="negrilla">Inversos:</p>
           Para cada elemento a en G, existe un unico elemento b en G tal que a
           * b = b * a = e, donde e es el elemento neutro.
         </li>
         <br />
-        <li>
+        <li class="definicion2">
           <p class="negrilla">Clausura:</p>
           Si a y b están en G, entonces a * b está en G.
         </li>
@@ -68,13 +70,14 @@
       En otras palabras se dice que el grupo es abeliano
       <br />
       <div class="row">
-        <div class="col"></div>
-        <div class="col-10" id="notacion1">
+        <div class="col-2"></div>
+        <div class="col-8" id="notacion1">
           <p class="negrilla">Notacion:</p>
           <p>
             Se dice que un grupo es abeliano si todos sus elementos comnutan
           </p>
         </div>
+        <div class="col-2"></div>
       </div>
     </section>
     <br />
@@ -89,7 +92,7 @@
           <div class="card">
             <img src="imagenes\imagenD3.png" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Grupos diedrales</h5>
+              <h5 class="card-title" >Grupos diedrales</h5>
               <p class="card-text">
                 Un grupo diedral es el conjunto de toas las rotaciones y reflecciones de figuras geometricas sin realizar deformaciones, su operacion en la composicion.
                 La imagen muestra al grupo diedral del triangulo "D3"
@@ -133,47 +136,40 @@
       <h2>Contactanos</h2>
       <br/>
       <div class="row">
-        <div class="col-4">
+        <div class="col-6">
 
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email address</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <label for="exampleFormControlTextarea1" class="form-label">Cuentanos tu experiencia</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
+          
+          <div>
+            <label for="customRange1" class="form-label">¿Que tanto te gusto?</label>
+            <input type="range" class="form-range" id="customRange1">
+          </div> 
+
+          <br />
+          <div>
+            <label for="customRange1" class="form-label">¿Cual es tu nivel educativo?</label>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary">Bachillerato</button>
+              <button type="button" class="btn btn-primary">Pregrado</button>
+              <button type="button" class="btn btn-primary">Postgrado</button>
+            </div>
+          </div>
+
+        </div>
         
-        </div>
-        <div class="col-4">
-          <div class="card">
-            <img src="imagenes\imagenMatriz.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Grupo de matrices</h5>
-              <p class="card-text">
-                Todas las matrices construidas sobre cualquier campo de escalares con determinante diferente de 0 forma un grupo. La operacion del grupo es la multiplicacion usual de matrices.
-                Este grupo es no abeliano, como sabemos la multiplicacion de matrices es no conmutativa.
-              </p>
-              <a href="https://es.wikipedia.org/wiki/Grupo_lineal_general" class="btn btn-primary">Leer más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card">
-            <img src="imagenes\imagenVerctorial.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Espacios vectoriales</h5>
-              <p class="card-text">
-                cualquier espacio vectorial construido sobre cualquier campo de escalares es un grupo bajo la operacion usual de suma de vectores. 
-                En este caso no tenemos multiplicacion por escalar como estamos acostumbrados, pero esta operacion se puede ver como una accion de grupo. 
-                Tema que es mas avanzado
-              </p>
-              <a href="https://es.wikipedia.org/wiki/Espacio_vectorial" class="btn btn-primary">Leer más</a>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
+
+    <br />
+    <br />
+
 
 
 
