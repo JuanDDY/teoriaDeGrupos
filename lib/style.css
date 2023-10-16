@@ -1,0 +1,20 @@
+/* Add your styles here */
+
+header {
+    text-align: center;
+  }
+  
+  .negrilla {
+    font-weight: bold;
+  }
+  
+  #notacion1 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkcyan;
+  
+  }
+  
+  .card-title {
+    color:#FF0000;
+  }
